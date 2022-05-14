@@ -16,18 +16,18 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="user : ${user}">
+    <tr th:each="user : ${allUser}">
         <td th:text="${user.id}"></td>
         <td th:text="${user.firstName}"></td>
         <td th:text="${user.lastName}"></td>
         <td th:text="${user.age}"></td>
-<!--        <td><a th:href="@{update/{id}(id=${user.id})}">Edit</a></td>-->
-<!--        <td><a th:href="@{delete/{id}(id=${user.id})}">Delete</a></td>-->
+        <td><a th:href="@{{id}(id=${user.id})}">Edit</a></td>
+        <td><a th:href="@{delete/{id}(id=${user.id})}">Delete</a></td>
     </tr>
     </tbody>
 </table>
-<!--</div>-->
-<!--<p><a href="/create">Create user</a></p>-->
-<!--</div>-->
+</div>
+<p><a href="create">Create user</a></p>
+</div>
 </body>
 </html>
