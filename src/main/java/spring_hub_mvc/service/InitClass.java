@@ -8,13 +8,13 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class InitClass {
-    @Autowired
-    private UserService userService;
-
-    @PostConstruct
-    public void initMethod(){
-        userService.add(new User("Ivan","Ivanov",22));
-        userService.add(new User("Максим","Максимов",26));
-        userService.add(new User("Petr","Petrov",5));
-    }
+//    @Autowired
+//    private UserService userService;
+//
+//    @PostConstruct
+//    public void initMethod(){
+//        userService.add(new User("Ivan","Ivanov",22));
+//        userService.add(new User("Максим","Максимов",26));
+//        userService.add(new User("Petr","Petrov",5));
+//    }
 }

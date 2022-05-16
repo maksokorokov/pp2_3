@@ -30,8 +30,9 @@ public class UserDAOImpl implements UserDAO{
     @Override
     @Transactional
     public void delete(Long id) {
-        User user = entityManager.find(User.class,id);
-        entityManager.remove(user);
+
+        entityManager.remove(entityManager.find(User.class,id));
+
     }
 
     @Override
